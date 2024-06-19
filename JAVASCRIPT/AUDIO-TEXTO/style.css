@@ -1,0 +1,21 @@
+/* Configuraciones generales del documento*/
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: antiquewhite;
+}
+
+h1{
+  color: aliceblue;
+}
+
+/*Configuración para la caja de texto*/
+#texto{
+  width: 100%;
+  height: 150px;
+  border-radius: 15px;
+  margin: 10px;
+}
