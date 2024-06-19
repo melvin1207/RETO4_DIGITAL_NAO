@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titulo -->
+    <title>RETOS DE JAVASCRIPT</title>
+  
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+    <!-- Estilos de la pagina -->
+     <link rel="stylesheet" href="./style.css">
+
+     <!-- Script -->
+      <script defer src="./calculadora.js"></script>
 </head>
 <body>
-  <h1>Calculadora</h1>
+
+  <!-- Contnedor principal -->
+  <main class="container bg-danger rounded my-5 p-3 text-center">
+    <!-- Titulo -->
+    <h1>CALCULADORA DE INGRESOS</h1>
+
+    <!-- Contenedor para la presentación de los datos -->
+    <section class="container bg-light rounded p-2 d-flex justify-content-evenly">
+
+      <!-- Ingresar Gastos o Ingresos -->
+      <div>
+
+        <!-- Se infresan los ingresos -->
+        <div class="mb-3">
+          <label for="ingresos" class="form-label">Ingresos</label>
+          <input type="number" class="form-control" id="ingresos">
+        </div>
+        <button type="button" class="btn btn-primary" id="btn-ingresos">Ingresar</button>
+
+        <!-- Se ingresan los gastos-->
+        <div class="mb-3">
+          <label for="gastos" class="form-label">Gastos</label>
+          <input type="number" class="form-control" id="gastos">
+        </div>
+        <button type="submit" class="btn btn-primary" id="btn-gastos">Ingresar</button>
+      </div>
+
+      <section>
+
+        <!-- Se da el balance general -->
+        <h2>BALANCE GENERAL</h2>
+        <h4 id="balance-general"></h4>
+
+        <section class="d-flex justify-content-evenly">
+
+          <!-- Se da el total de los ingresos -->
+          <div class="mx-4">
+            <h3>TOTAL DE INGRESOS</h3>
+            <h4 id="ingresos-totales"></h4>
+          </div>
+
+          <!-- Se da el total de los gastos -->
+          <div class="mx-4">
+            <h3>TOTAL DE GASTOS</h3>
+            <h4 id="gastos-totales"></h4>
+          </div>
+        </section>
+      </section>
+     
+    </section>
+  </main>
 </body>
 </html>

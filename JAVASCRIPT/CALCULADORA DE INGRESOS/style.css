@@ -1,0 +1,22 @@
+/* Configuraciones generales del documento*/
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: antiquewhite;
+}
+
+h1{
+  color: aliceblue;
+}
+
+/* Configuración para la presentación de los datos*/
+#ingresos-totales{
+  color: green;
+}
+
+#gastos-totales{
+  color: rgb(128, 0, 0);
+}
