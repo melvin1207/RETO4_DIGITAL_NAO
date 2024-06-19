@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: antiquewhite;
+}
+
+.container{
+  margin: 100px auto;
+}
+
+h2{
+  color: aliceblue;
+}
+
+button{
+  font-weight: bolder;
+}
