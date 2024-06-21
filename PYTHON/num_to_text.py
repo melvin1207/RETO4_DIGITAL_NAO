@@ -14,7 +14,6 @@ decena = ['', 'dieci', 'veinti', 'treinta y ', 'cuarenta y ', 'cincuenta y ', 's
 centena = ['', 'ciento', 'doscientos', 'trescientos', 'cuatrocientos', 'quinientos', 'seiscientos', 'setecientos', 'ochocientos', 'novecientos']
 
 #Casos espaciales en la conversion
-
 # para escribir los numero del 11 al 15
 if decena_numero == 1 and 0 < unidad_numero < 6:
   decena = ['', 'once', 'doce', 'trece', 'catorce', 'quince']
