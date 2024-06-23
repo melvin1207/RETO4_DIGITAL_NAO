@@ -45,3 +45,8 @@ while option != 4:
     print("Listo ", transferencia," de saldo se transfirieron al numero: ", numero)
     saldo = saldo - transferencia
     print("Ahora tu saldo es: ", saldo)
+  
+  #el ciclo se rompe si se elige el 4
+  elif opcion == "4":
+    break
+  
