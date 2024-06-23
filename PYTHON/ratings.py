@@ -12,7 +12,3 @@ movies = data['results']
 for movie in movies:
   print(movie['original_title'])
   print(movie['vote_average'])
-
-
-
-
