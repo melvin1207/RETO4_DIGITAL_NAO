@@ -1,11 +1,11 @@
 //Se obtienen botones para ingresas los gastos o ingresos
-const btn_ingresos = document.querySelector('#btn-ingresos')
-const btn_gastos = document.querySelector('#btn-gastos')
+const btnIngresos = document.querySelector('#btn-ingresos')
+const btnGastos = document.querySelector('#btn-gastos')
 
 //se obtienen los campos donde se escribiran los datos
-const balance_general = document.querySelector('#balance-general')
-const ingresos_totales = document.querySelector('#ingresos-totales')
-const gastos_totales = document.querySelector('#gastos-totales')
+const balanceGeneral = document.querySelector('#balance-general')
+const ingresosTotales = document.querySelector('#ingresos-totales')
+const gastosTotales = document.querySelector('#gastos-totales')
 
 
 //variables para manejar el dinero
@@ -15,27 +15,27 @@ let gasto = 0
 
 
 //funcion para ingresar dinero
-btn_ingresos.addEventListener('click', (e) => {
+btnIngresos.addEventListener('click', (e) => {
   e.preventDefault()
 
   //se actualiza el balance general
   balance = Number(document.querySelector('#ingresos').value) + Number(balance)
-  balance_general.innerHTML = balance
+  balanceGeneral.innerHTML = balance
 
   //se actualizan los ingresos totales
   ingreso = Number(document.querySelector('#ingresos').value) + Number(ingreso)
-  ingresos_totales.innerHTML = ingreso
+  ingresosTotales.innerHTML = ingreso
 })
 
 //funcion para los gastos
-btn_gastos.addEventListener('click', (e) => {
+btnGastos.addEventListener('click', (e) => {
   e.preventDefault()
 
   //se actualiza el balance general
   balance = Number(balance) - Number(document.querySelector('#gastos').value)
-  balance_general.innerHTML = balance
+  balanceGeneral.innerHTML = balance
 
   //se actualizan los gastos totales
   gasto = Number(document.querySelector('#gastos').value) + Number(gasto)
-  gastos_totales.innerHTML = gasto
+  gastosTotales.innerHTML = gasto
 })

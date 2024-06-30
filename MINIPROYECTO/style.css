@@ -1,0 +1,22 @@
+/* Configuraciones generales del documento*/
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: antiquewhite;
+}
+
+h2{
+  color: aliceblue;
+}
+
+.container{
+  justify-content: center;
+  align-items: center;
+}
+
+canvas{
+  background-color: aliceblue;
+}
